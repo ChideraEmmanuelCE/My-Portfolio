@@ -65,20 +65,12 @@ button{font:inherit}
 .section-title{font-size:clamp(43px,6vw,78px);line-height:.92;letter-spacing:-.07em;margin:0;max-width:800px}
 .section-title span{color:var(--blue)}
 .section-copy{color:var(--muted);max-width:650px;font-size:16px;margin-top:22px}
-.work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
-.work{background:var(--white);border:1px solid var(--ink);border-radius:var(--radius);min-height:350px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:.25s}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.work{background:var(--white);border:1px solid var(--ink);border-radius:var(--radius);min-height:390px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:.25s}
 .work:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
-.work:nth-child(1){grid-column:span 7;background:var(--blue);color:white}
-.work:nth-child(2){grid-column:span 5;background:var(--red);color:white}
-.work:nth-child(3){grid-column:span 4;background:var(--yellow)}
-.work:nth-child(4){grid-column:span 4}
-.work:nth-child(5){grid-column:span 4;background:var(--ink);color:white}
-.work:nth-child(6){grid-column:span 6}
-.work:nth-child(7){grid-column:span 6;background:var(--paper2)}
-.work:nth-child(8){grid-column:span 4;background:var(--white)}
-.work:nth-child(9){grid-column:span 4;background:var(--yellow)}
-.work:nth-child(10){grid-column:span 4;background:var(--blue);color:white}
-.work:nth-child(11){grid-column:span 12;background:var(--ink);color:white;min-height:260px}
+.work:nth-child(1){background:var(--blue);color:white}
+.work:nth-child(2){background:var(--red);color:white}
+.work:nth-child(3){background:var(--yellow)}
 .work .number{font-size:11px;font-weight:900;opacity:.6}
 .work .kind{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:900}
 .work h3{font-size:clamp(30px,4vw,56px);line-height:.9;letter-spacing:-.06em;margin:12px 0}
@@ -175,73 +167,25 @@ footer{padding:25px 0 40px;display:flex;justify-content:space-between;color:var(
       <div class="eyebrow">01 / Selected work</div>
       <div>
         <h2 class="section-title">A growing shelf of <span>things I actually built.</span></h2>
-        <p class="section-copy">Real repositories from my GitHub, presented as products rather than a list of technologies. Open any card to inspect the project.</p>
+        <p class="section-copy">Three selected projects that best demonstrate practical product thinking, interface design and real-world software development. Open any card to experience the live project.</p>
       </div>
     </div>
-    <div class="filterbar">
-      <button class="filter active" data-filter="all">All</button>
-      <button class="filter" data-filter="web">Web</button>
-      <button class="filter" data-filter="creative">Creative</button>
-      <button class="filter" data-filter="game">Games</button>
-      <button class="filter" data-filter="app">Apps</button>
-    </div>
     <div class="work-grid">
-      <a class="work" data-cat="web" href="https://github.com/ChideraEmmanuelCE/Dream-builder" target="_blank" rel="noopener">
-        <div><div class="number">01</div><div class="kind">Web / Studio</div></div>
-        <div><h3>Dream<br>Builder</h3><p>A polished responsive digital studio and portfolio experience, built without a framework or build step.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
+      <a class="work" href="http://pocket-pos.netlify.app" target="_blank" rel="noopener">
+        <div><div class="number">01</div><div class="kind">Business / POS</div></div>
+        <div><h3>Pocket<br>POS</h3><p>A practical point-of-sale experience designed around everyday business operations, transactions and a clean customer workflow.</p></div>
+        <div class="work-foot"><span>Open live project ↗</span><span class="arrow">↗</span></div>
       </a>
-      <a class="work" data-cat="game" href="https://github.com/ChideraEmmanuelCE/Brain-connect" target="_blank" rel="noopener">
-        <div><div class="number">02</div><div class="kind">Game / JavaScript</div></div>
-        <div><h3>Neon<br>Dodge</h3><p>Responsive browser arcade game with touch controls, progressive difficulty, energy orbs, pause and local high scores.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
+      <a class="work" href="http://my-nova-digital.netlify.app" target="_blank" rel="noopener">
+        <div><div class="number">02</div><div class="kind">Digital Product / Web</div></div>
+        <div><h3>Nova<br>Digital</h3><p>A polished client-facing digital product experience showing responsive interface design, visual systems and product presentation.</p></div>
+        <div class="work-foot"><span>Open live project ↗</span><span class="arrow">↗</span></div>
       </a>
-      <a class="work" data-cat="creative" href="https://github.com/ChideraEmmanuelCE/nova-studio-" target="_blank" rel="noopener">
-        <div><div class="number">03</div><div class="kind">Creative / Web</div></div>
-        <div><h3>Nova<br>Studio</h3><p>Premium responsive studio website using plain HTML, CSS and JavaScript with motion and a visual system.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="app" href="https://github.com/ChideraEmmanuelCE/bind-app" target="_blank" rel="noopener">
-        <div><div class="number">04</div><div class="kind">App / Full-stack</div></div>
-        <div><h3>Bind</h3><p>A full-stack application project exploring authentication, user flows and product experience.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="game" href="https://github.com/ChideraEmmanuelCE/shape-learning-game" target="_blank" rel="noopener">
-        <div><div class="number">05</div><div class="kind">Game / EdTech</div></div>
-        <div><h3>Shape<br>Learning</h3><p>An interactive learning game built around simple visual interactions and accessible play.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="web" href="https://github.com/ChideraEmmanuelCE/skyline" target="_blank" rel="noopener">
-        <div><div class="number">06</div><div class="kind">Web Project</div></div>
-        <div><h3>Skyline</h3><p>A focused web build exploring another product direction and implementation.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="web" href="https://github.com/ChideraEmmanuelCE/Your-guide" target="_blank" rel="noopener">
-        <div><div class="number">07</div><div class="kind">Utility / Web</div></div>
-        <div><h3>Your<br>Guide</h3><p>A practical web experience focused on presenting useful information through a dedicated interface.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="creative" href="https://github.com/ChideraEmmanuelCE/Valentine-Request" target="_blank" rel="noopener">
-        <div><div class="number">08</div><div class="kind">Interactive / Creative</div></div>
-        <div><h3>Valentine<br>Request</h3><p>A playful interactive web experience built around a simple idea and memorable interaction.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="creative" href="https://github.com/ChideraEmmanuelCE/ChideraEmmanuelCE" target="_blank" rel="noopener">
-        <div><div class="number">09</div><div class="kind">Profile / GitHub</div></div>
-        <div><h3>Developer<br>Profile</h3><p>My GitHub profile repository — the place where the wider engineering identity lives.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="app" href="https://github.com/ChideraEmmanuelCE/Job-Resume" target="_blank" rel="noopener">
-        <div><div class="number">10</div><div class="kind">Career / Product</div></div>
-        <div><h3>Job<br>Resume</h3><p>A dedicated repository for the professional résumé and career-facing work.</p></div>
-        <div class="work-foot"><span>Open repository ↗</span><span class="arrow">↗</span></div>
-      </a>
-      <a class="work" data-cat="web" href="https://github.com/ChideraEmmanuelCE/My-Portfolio" target="_blank" rel="noopener">
-        <div><div class="number">11</div><div class="kind">Portfolio / Open Source</div></div>
-        <div><h3>This portfolio is itself a project.</h3><p>Open the source repository to see the implementation, assets and the evolution of the site.</p></div>
-        <div class="work-foot"><span>View source ↗</span><span class="arrow">↗</span></div>
-      </a>
-    </div>
+      <a class="work" href="http://quick-bill-split.netlify.app" target="_blank" rel="noopener">
+        <div><div class="number">03</div><div class="kind">Utility / Interactive</div></div>
+        <div><h3>Quick Bill<br>Split</h3><p>An interactive utility that turns a simple calculation problem into a focused, responsive user experience.</p></div>
+        <div class="work-foot"><span>Open live project ↗</span><span class="arrow">↗</span></div>
+      </a>    </div>
   </div>
 </section>
 
